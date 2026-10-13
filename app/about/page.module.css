@@ -1,0 +1,75 @@
+.page {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding-bottom: 72px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 54px 0 28px;
+}
+
+.imageBlock img {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 1px solid var(--line);
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.textBlock h1 {
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.04;
+  letter-spacing: -0.06em;
+}
+
+.textBlock p {
+  color: var(--muted);
+}
+
+.skillsSection {
+  margin-top: 16px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.skillsSection h2 {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillsList span {
+  padding: 11px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(148, 163, 184, 0.04);
+  color: var(--text);
+}
+
+@media (max-width: 780px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
